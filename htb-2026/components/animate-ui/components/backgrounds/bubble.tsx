@@ -32,12 +32,12 @@ function BubbleBackground({
   interactive = false,
   transition = { stiffness: 100, damping: 20 },
   colors = {
-    first: '18,113,255',
-    second: '221,74,255',
-    third: '0,220,255',
-    fourth: '200,50,50',
-    fifth: '180,180,50',
-    sixth: '140,100,255',
+    first: '255,105,180',
+    second: '186,85,211',
+    third: '255,182,193',
+    fourth: '147,112,219',
+    fifth: '219,112,147',
+    sixth: '138,43,226',
   },
   ...props
 }: BubbleBackgroundProps) {
@@ -108,7 +108,7 @@ function BubbleBackground({
       ref={containerRef}
       data-slot="bubble-background"
       className={cn(
-        'relative size-full overflow-hidden bg-gradient-to-br from-violet-900 to-blue-900',
+        'relative size-full overflow-hidden bg-white',
         className,
       )}
       {...props}
