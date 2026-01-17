@@ -3,12 +3,12 @@ import { BubbleBackground } from '@/components/animate-ui/components/backgrounds
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black relative">
+    <div className="flex min-h-screen items-center justify-center font-sans relative overflow-hidden">
       <BubbleBackground
         interactive={true}
-        className="absolute inset-0 z-0"
+        className="fixed inset-0 z-0"
       />
-      <main className="relative z-10 flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+      <main className="relative z-10 flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
